@@ -15,6 +15,8 @@ set tags+=tags;$HOME
 set tags+=~/.vim/tags/cpp
 autocmd BufWritePost *.c,*.cpp,*.h silent! !ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .
 
+" Supertab
+let g:SuperTabDefaultCompletionType = "context"
 
 " OmniCppComplete
 let OmniCpp_NamespaceSearch = 2
@@ -28,5 +30,5 @@ let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 
 " Auto open/close the popup/preview window
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclode|endif
-set completeopt=menuone,menu,longest,preview
+set completeopt=menuone,menu,longest
 
