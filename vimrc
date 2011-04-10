@@ -6,8 +6,19 @@ filetype plugin on
 
 colo wombat
 syntax on
-set ts=4
+set tabstop=4
 set autoindent
+set number " Line Numbers
+set autochdir
+set scrolloff=5 "Leave at least 5 lines up/down
+set ttyfast
+set noerrorbells
+
+" Searching
+set incsearch
+set ignorecase
+set showmatch
+set diffopt=filler,iwhite "Ignore all whitespace
 
 " Tags
 set tags+=./tags
