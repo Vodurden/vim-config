@@ -19,3 +19,5 @@ Dependencies:
 		libclang accessable from /usr/lib (modify g:clang_library_path if different) assumes clang > 2.8
 	command-t:
 		Ruby 1.8 (with devel if compiling)
+	ProtoDef:
+		astyle (Runs a style after generating)
