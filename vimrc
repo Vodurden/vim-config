@@ -6,6 +6,9 @@ filetype plugin on
 
 colo wombat
 syntax on
+set title " Inherit vims title, not the terminals
+set hidden " Allows multiple buffer managing
+set backspace=indent,eol,start " Fix backspace on broken machines
 set tabstop=4
 set autoindent
 set number " Line Numbers
@@ -13,10 +16,13 @@ set autochdir
 set scrolloff=5 "Leave at least 5 lines up/down
 set ttyfast
 set noerrorbells
+set history=1000 " Remeber moe commands, this isn't the stone ages
+let mapleader = "," 
 
 " Searching
 set incsearch
 set ignorecase
+set smartcase
 set showmatch
 set diffopt=filler,iwhite "Ignore all whitespace
 

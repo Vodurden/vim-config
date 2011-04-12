@@ -1,0 +1,10 @@
+have_header: checking for ruby.h... -------------------- yes
+
+"gcc -E -I. -I/usr/lib64/ruby/1.8/x86_64-linux -I.    -fmessage-length=0 -O2 -Wall -D_FORTIFY_SOURCE=2 -fstack-protector -funwind-tables -fasynchronous-unwind-tables -g -g -fno-strict-aliasing  -fPIC    conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include <ruby.h>
+/* end */
+
+--------------------
+
