@@ -29,17 +29,11 @@ autocmd BufWritePost *.c,*.cpp,*.h silent! !ctags -R --c++-kinds=+p --fields=+ia
 " Supertab
 let g:SuperTabDefaultCompletionType = "context"
 
-" OmniCppComplete
-let OmniCpp_NamespaceSearch = 2
-let OmniCpp_GlobalScopeSearch = 1
-let OmniCpp_ShowAccess = 1
-let OmniCpp_ShowPrototypeInAbbr = 1 "Show function params
-let OmniCpp_MayCompleteDot = 1 " Autocomplete after .
-let OmniCpp_MayCompletArrow = 1 " Autocomplete after ->
-let OmniCpp_MayCompleteScope = 1 " Autocomplete after ::
-let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+" Clang Complete
+let g:clang_complete_copen = 1
+let g:clang_use_library = 1
+let g:clang_library_path = '/usr/lib'
 
 " Auto open/close the popup/preview window
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclode|endif
 set completeopt=menuone,menu,longest
-
