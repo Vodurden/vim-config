@@ -40,6 +40,9 @@ let g:clang_complete_copen = 1
 let g:clang_use_library = 1
 let g:clang_library_path = '/usr/lib'
 
+" ProtoDef config
+let g:protodefprotogetter = $HOME . '/.vim/bundle/protodef/pullproto.pl'
+
 " Auto open/close the popup/preview window
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclode|endif
 set completeopt=menuone,menu,longest
