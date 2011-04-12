@@ -9,7 +9,7 @@ filetype plugin on
 "Make .hpp, .h, .cpp, .c files all use the cpp configuration settings located
 "in bundle/file-config/after/ftplugin/cpp.vim
 if has("autocmd")
-	autocmd BufNewFile,BufRead *.h,*.hpp,*.c setfiletype cpp
+	autocmd BufNewFile,BufRead *.h,*.hpp,*.c,*.cpp setfiletype cpp
 endif
 
 colo wombat
