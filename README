@@ -14,7 +14,7 @@ Update Submodules:
 Dependencies:
 	clang_complete:
 		Python Support
-		libclang accessable from /usr/lib (modify g:clang_library_path if different) assumes clang > 2.8
+		libclang accessable from /usr/local/lib (modify g:clang_library_path if different) assumes clang > 2.8
 	command-t:
 		Ruby 1.8 (with devel if compiling)
 	ProtoDef:

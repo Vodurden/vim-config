@@ -7,7 +7,7 @@ autocmd BufWritePost *.c,*.cpp,*.h silent! !ctags -R --c++-kinds=+p --fields=+ia
 " Clang Complete
 let g:clang_complete_copen = 1
 let g:clang_use_library = 1
-let g:clang_library_path = '/usr/lib'
+let g:clang_library_path = '/usr/local/lib'
 
 " ProtoDef config
 let g:protodefprotogetter = $HOME . '/.vim/bundle/protodef/pullproto.pl'
