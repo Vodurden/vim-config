@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/vodurden/.vim'
+let g:netrw_dirhist_2='/home/vodurden/.vim/bundle'
+let g:netrw_dirhist_3='/home/vodurden/.vim/bundle/file-config'
+let g:netrw_dirhist_4='/home/vodurden/.vim/bundle/file-config/after'
+let g:netrw_dirhist_5='/home/vodurden/.vim/bundle/file-config/after/ftplugin'
+let g:netrw_dirhist_6='/home/vodurden/Projects/c++/libnte'

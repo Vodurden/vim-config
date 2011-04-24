@@ -1,0 +1,15 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+<leader>PN	cpp.vim	/^nmap <buffer> <silent> <leader>PN :set paste<cr>i<c-r>=protodef#ReturnSkeletonsFromPrototypesForCurrentBuffer({'includeNS' : 0})<cr><esc>='[:set nopaste<cr>:%!astyle --style=whitesmith -s4<cr>$/;"	m
+<leader>PP	cpp.vim	/^nmap <buffer> <silent> <leader>PP 	:set paste<cr>i<c-r>=protodef#ReturnSkeletonsFromPrototypesForCurrentBuffer({})<cr><esc>='[:set nopaste<cr>:%!astyle --style=whitesmith -s4<cr>$/;"	m
+Style	cpp.vim	/^command Style !astyle --style=whitesmith -s4$/;"	c
+g:clang_complete_copen	cpp.vim	/^let g:clang_complete_copen = 1$/;"	v
+g:clang_library_path	cpp.vim	/^let g:clang_library_path = '\/usr\/local\/lib'$/;"	v
+g:clang_use_library	cpp.vim	/^let g:clang_use_library = 1$/;"	v
+g:disable_protodef_mapping	cpp.vim	/^let g:disable_protodef_mapping = 1 " Remove this line to enable the default mappings, the set value is meaningless$/;"	v
+g:protodefprotogetter	cpp.vim	/^let g:protodefprotogetter = $HOME . '\/.vim\/bundle\/protodef\/pullproto.pl'$/;"	v
+main	test.cpp	/^int main(int argc, const char *argv[])$/;"	f	signature:(int argc, const char *argv[])
