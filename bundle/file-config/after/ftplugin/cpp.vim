@@ -14,10 +14,10 @@ let g:clang_library_path = '/usr/local/lib'
 
 " ProtoDef config
 let g:protodefprotogetter = $HOME . '/.vim/bundle/protodef/pullproto.pl'
-"let g:disable_protodef_mapping = 1 " Remove this line to enable the default mappings, the set value is meaningless
+let g:disable_protodef_mapping = 1 " Remove this line to enable the default mappings, the set value is meaningless
 " Format the style after generation
-"nmap <buffer> <silent> <leader>PP 	:set paste<cr>i<c-r>=protodef#ReturnSkeletonsFromPrototypesForCurrentBuffer({})<cr><esc>='[:set nopaste<cr>
-"nmap <buffer> <silent> <leader>PN :set paste<cr>i<c-r>=protodef#ReturnSkeletonsFromPrototypesForCurrentBuffer({'includeNS' : 0})<cr><esc>='[:set nopaste<cr>
+nmap <buffer> <silent> <leader>PP 	:set paste<cr>i<c-r>=protodef#ReturnSkeletonsFromPrototypesForCurrentBuffer({})<cr><esc>='[:set nopaste<cr>:Style<cr>
+nmap <buffer> <silent> <leader>PN :set paste<cr>i<c-r>=protodef#ReturnSkeletonsFromPrototypesForCurrentBuffer({'includeNS' : 0})<cr><esc>='[:set nopaste<cr>:Style<cr>
 
 
 " Auto open/close the popup/preview window
