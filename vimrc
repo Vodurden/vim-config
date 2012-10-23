@@ -1,6 +1,6 @@
 set nocp
 
-"Filetype stuff
+"Filetype and Bundle stuff
 filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
@@ -12,8 +12,20 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.h,*.hpp,*.c,*.cpp setfiletype cpp
 endif
 
-colo wombat
+" Themeing
+set background=dark
+colorscheme solarized
 syntax on
+
+if has("gui_running")
+	if has("gui_gtk2")
+		set guifont=Inconsolata\ 12
+	elseif has("gui_win32") " Different font for windows
+		set guifont=Consolas:h11:cANSI
+	endif
+endif
+
+set clipboard+=unnamed " Yanks go to cliboard
 set title " Inherit vims title, not the terminals
 set hidden " Allows multiple buffer managing
 set backspace=indent,eol,start " Fix backspace on broken machines
