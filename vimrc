@@ -19,9 +19,6 @@ set background=dark
 colorscheme solarized
 syntax on
 
-" Solarized Settings
-g:solarized_contrast = "high"
-
 if has("gui_running")
 	if has("gui_gtk2")
 		set guifont=Inconsolata\ 12
