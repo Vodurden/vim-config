@@ -53,8 +53,6 @@ let mapleader = ","
 set showmatch " Show matching braces
 
 " Searching
-nnoremap / /\v " Change vim regex to standard regex by default
-vnoremap / /\v 
 set incsearch
 set ignorecase
 set smartcase
