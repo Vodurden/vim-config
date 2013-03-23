@@ -1,5 +1,6 @@
 " Disable vi compatibility mode
 set nocompatible
+set encoding=utf-8
 
 "Filetype and Bundle stuff
 filetype off
