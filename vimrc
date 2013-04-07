@@ -2,12 +2,6 @@
 set nocompatible
 set encoding=utf-8
 
-"Filetype and Bundle stuff
-filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-filetype plugin on
-
 " Filetype associations
 if has("autocmd")
 	"Make .hpp, .h, .cpp, .c files all use the cpp configuration settings located
