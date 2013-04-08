@@ -1,0 +1,9 @@
+1. Make a new empty folder called ycm_build
+2. Download a windows version of clang [http://www.ishani.org/web/articles/code/clang-win32/]
+3. Put the windows version in a folder somewhere
+4. Modify the ycm CMakeLists.txt because it fails to find clang, just replace the TEMP in set( EXTERNAL_LICLANG_PATH TEMP ) with the correct path
+5. Configure using cmake-gui, USE_CLANG_COMPLETER should be true but nothing else. Visual Studio 11 output was used
+6. Open the solution in visual studio and build the ycm_core solution
+7. Copy the output ycm_core.lib, ycm_core.pyd and libclang.dll to the YouCompleteMe/python directory
+
+NOTE: You also may need to add boost:: to some of the bind, make_shared and other calls in a few of the source files
