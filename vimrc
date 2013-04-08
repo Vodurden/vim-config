@@ -26,6 +26,7 @@ set encoding=utf-8
 
     " Vim-Scripts Based {
         Bundle 'a.vim' 
+        Bundle 'taglist.vim'
     " }
 
     filetype plugin indent on
