@@ -2,6 +2,35 @@
 set nocompatible
 set encoding=utf-8
 
+" Windows Compatibility {
+    " On windows we want to force '.vim' instead of vimfiles'
+    " this makes it easier to use across systems.
+    if has('win32') || has('win64')
+        set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
+    endif
+" }
+
+" Bundles {
+    
+    filetype off
+    set rtp+=$HOME/.vim/bundle/vundle
+    call vundle#rc()
+
+    " Github Based {
+        Bundle 'gmarik/vundle'
+        Bundle 'altercation/vim-colors-solarized'
+        Bundle 'wincent/Command-T'
+        Bundle 'scrooloose/nerdtree'
+        Bundle 'Valloric/YouCompleteMe'
+    " }
+
+    " Vim-Scripts Based {
+        Bundle 'a.vim' 
+    " }
+
+    filetype plugin indent on
+" }
+
 " Filetype associations
 if has("autocmd")
 	"Make .hpp, .h, .cpp, .c files all use the cpp configuration settings located
