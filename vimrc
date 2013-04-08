@@ -21,6 +21,7 @@ set encoding=utf-8
         Bundle 'altercation/vim-colors-solarized'
         Bundle 'wincent/Command-T'
         Bundle 'scrooloose/nerdtree'
+        Bundle 'scrooloose/syntastic'
         Bundle 'Valloric/YouCompleteMe'
     " }
 
