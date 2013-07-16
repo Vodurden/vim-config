@@ -100,7 +100,11 @@ set nocompatible
         map <C-l> <C-w>l
     " }
 
-    " change paste motion (source: http://stackoverflow.com/a/5357194/203133) {
+    " Do replace on word under cursor on the current line {
+        nmap <leader>w :s/\(<c-r>=expand("<cword>")<cr>\)/
+    " }
+
+    " Change paste motion (source: http://stackoverflow.com/a/5357194/203133) {
         nmap <silent> cp :set opfunc=ChangePaste<CR>g@
         function! ChangePaste(type, ...)
             silent exe "normal! `[v`]\"_c"
