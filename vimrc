@@ -99,7 +99,14 @@ set nocompatible
         map <C-k> <C-w>k
         map <C-l> <C-w>l
     " }
-    "
+
+    " change paste motion (source: http://stackoverflow.com/a/5357194/203133) {
+        nmap <silent> cp :set opfunc=ChangePaste<CR>g@
+        function! ChangePaste(type, ...)
+            silent exe "normal! `[v`]\"_c"
+            silent exe "normal! p"
+        endfunction
+    " }
 " }
 
 " Supertab
