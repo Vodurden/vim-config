@@ -100,7 +100,6 @@ set nocompatible
         map <C-l> <C-w>l
     " }
     "
-    nnoremap ; :
 " }
 
 " Supertab
