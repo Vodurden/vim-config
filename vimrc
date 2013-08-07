@@ -20,6 +20,7 @@ set nocompatible
         Bundle 'wincent/Command-T'
         Bundle 'scrooloose/nerdtree'
         Bundle 'scrooloose/syntastic'
+        Bundle 'jistr/vim-nerdtree-tabs'
         Bundle 'Valloric/YouCompleteMe'
     " }
 
