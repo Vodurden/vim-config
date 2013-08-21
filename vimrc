@@ -21,6 +21,7 @@ set nocompatible
         Bundle 'scrooloose/nerdtree'
         Bundle 'scrooloose/syntastic'
         Bundle 'jistr/vim-nerdtree-tabs'
+        Bundle 'fholgado/minibufexpl.vim'
         Bundle 'Valloric/YouCompleteMe'
     " }
 
